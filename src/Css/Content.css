@@ -1,0 +1,74 @@
+.content-container {
+  margin-top: 20px;
+  height: auto;
+  margin-bottom: 80px;
+}
+
+span {
+  display: inline-flex;
+}
+
+.place-name span i {
+  font-size: 5rem;
+  color: white;
+}
+
+.place-name span h2 {
+  font-size: 5rem;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: 400;
+}
+
+.temp-info {
+  margin-top: -100px;
+  height: auto;
+}
+
+.temp-info h3 {
+  font-size: 4rem;
+  font-weight: 400;
+  margin-bottom: -10px;
+}
+
+.temp-info span p {
+  font-size: 1rem;
+  color: rgb(29, 28, 28);
+  font-weight: bolder;
+}
+
+.wave {
+  opacity: 0.1;
+  position: absolute;
+  top: 120%;
+  left: 50%;
+  background: white;
+  width: 50rem;
+  height: 50rem;
+  margin-left: -25rem;
+  margin-top: -20rem;
+  transform-origin: 50% 48%;
+  border-radius: 43%;
+  animation: drift 3000ms infinite linear;
+  z-index: 1;
+}
+
+.wave3 {
+  animation: drift 5000ms infinite linear;
+  z-index: 2 !important;
+  opacity: 0.2;
+}
+
+.wave2 {
+  animation: drift 7000ms infinite linear;
+  z-index: 3 !important;
+  opacity: 0.1;
+}
+
+@keyframes drift {
+  from {
+    transform: rotate(0deg);
+  }
+  from {
+    transform: rotate(360deg);
+  }
+}
