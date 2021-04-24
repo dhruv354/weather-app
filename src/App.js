@@ -1,16 +1,23 @@
 import React from "react";
-import SearchBar from "./Components/SearchBar";
-import Content from "./Components/Content";
+import { BrowserRouter, Route } from "react-router-dom";
 
+import TempCard from "./Components/TempCard";
+import Navbar from "./Components/Navbar";
+import SignIn from "./Components/SignIn";
 import "./App.css";
 
 function App() {
   return (
-    <div className="box">
-      <SearchBar />
-      <Content />
-      <div class="wave-image" />
-    </div>
+    <BrowserRouter>
+      <Route exact path="/">
+        <SignIn />
+      </Route>
+      <Route path="/tempcard">
+        <div className="box">
+          <TempCard />
+        </div>
+      </Route>
+    </BrowserRouter>
   );
 }
 

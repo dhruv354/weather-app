@@ -1,16 +1,181 @@
 .box {
-  margin: auto;
-  text-align: center;
-  margin-top: 150px;
-  width: 25vw;
-  height: 70vh;
-  width: 450px;
-  padding: 20px;
-  box-shadow: 10px black;
+  margin: auto !important;
+  text-align: center !important;
+  margin-top: 150px !important;
+  width: 25vw !important;
+  height: 70vh !important;
+  width: 450px !important;
+  padding: 20px !important;
+  box-shadow: 10px black !important;
   background-image: linear-gradient(
     to right,
     rgba(154, 182, 214, 0.473),
     #84afd6
-  );
-  position: relative;
+  ) !important;
+  position: relative !important;
+}
+
+.search-container {
+  text-align: center !important;
+  margin: 5px auto !important;
+  border-radius: 25px !important;
+  position: relative !important;
+}
+
+.search-input {
+  border-radius: 25px !important;
+  padding: 15px !important;
+  background-color: white !important;
+  border: none !important;
+  font-family: "cursive" !important;
+  width: 75% !important;
+  font-size: 1rem !important;
+  font-weight: 600 !important;
+}
+
+.search-input:focus,
+select:focus,
+textarea:focus,
+button:focus {
+  outline: none !important;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19) !important;
+}
+
+input[type="search"]::-webkit-search-cancel-button {
+  -webkit-appearance: searchfield-cancel-button !important;
+  cursor: pointer !important;
+  position: absolute !important;
+  right: 15px !important;
+}
+
+.content-container {
+  margin-top: 20px !important;
+  height: auto !important;
+  margin-bottom: 80px !important;
+}
+
+span {
+  display: inline-flex !important;
+}
+
+.place-name span i {
+  font-size: 5rem !important;
+  color: white !important;
+}
+
+.place-name span h2 {
+  font-size: 5rem !important;
+  font-family: Arial, Helvetica, sans-serif !important;
+  font-weight: 400 !important;
+}
+
+.temp-info {
+  margin-top: -100px !important;
+  height: auto !important;
+}
+
+.temp-info h3 {
+  font-size: 4rem !important;
+  font-weight: 400 !important;
+  margin-bottom: -10px !important;
+}
+
+.temp-info span p {
+  font-size: 1rem !important;
+  color: rgb(29, 28, 28) !important;
+  font-weight: bolder;
+}
+
+.wave {
+  opacity: 0.1;
+  position: absolute;
+  top: 120%;
+  left: 50%;
+  background: white;
+  width: 50rem;
+  height: 50rem;
+  margin-left: -25rem;
+  margin-top: -20rem;
+  transform-origin: 50% 48%;
+  border-radius: 43%;
+  animation: drift 3000ms infinite linear;
+  z-index: 1;
+}
+
+.wave3 {
+  animation: drift 5000ms infinite linear;
+  z-index: 2 !important;
+  opacity: 0.2;
+}
+
+.wave2 {
+  animation: drift 7000ms infinite linear;
+  z-index: 3 !important;
+  opacity: 0.1;
+}
+
+@keyframes drift {
+  from {
+    transform: rotate(0deg);
+  }
+  from {
+    transform: rotate(360deg);
+  }
+}
+
+/* text-align: center;
+} */
+
+.container {
+  margin: auto;
+  text-align: center;
+  margin-top: 200px;
+  padding: 25px;
+  width: 300px;
+  height: 300px;
+  background-color: whitesmoke;
+}
+.signin-container {
+  margin-top: 100px;
+}
+.input-field {
+  display: block;
+  margin: auto;
+  margin-bottom: 20px;
+  width: 100%;
+  height: 2rem;
+  -webkit-transition: all 0.3s ease-in-out;
+  -moz-transition: all 0.3s ease-in-out;
+  -ms-transition: all 0.3s ease-in-out;
+  -o-transition: all 0.3s ease-in-out;
+  border: 1px solid #dddddd;
+  transition: cubic-bezier(1, 0, 0, 1);
+  border-radius: 20px;
+  padding: 5px;
+}
+
+input[type="text"]:focus,
+textarea:focus {
+  box-shadow: 0 0 5px rgba(81, 203, 238, 1);
+  border: 1px solid rgba(81, 203, 238, 1);
+  outline: none;
+}
+
+button {
+  background-color: rgb(114, 151, 182);
+  -moz-border-radius: 5px;
+  -webkit-border-radius: 5px;
+  border-radius: 6px;
+  color: #fff;
+  font-family: "Oswald";
+  font-size: 20px;
+  text-decoration: none;
+  cursor: pointer;
+  border: none;
+}
+
+button:hover {
+  border: none;
+  background: red;
+  box-shadow: 0px 0px 1px #777;
 }
